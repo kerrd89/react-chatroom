@@ -1,8 +1,27 @@
-$wtf: #ff0080;
+$message-display: #ffffff;
+$primary-background: #34495E;
 $ridiculous: cursive;
 
 body {
-  background: $wtf;
+  background: $message-display;
+}
+
+.MessageFilters {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: $primary-background;
+  justify-content: flex-end;
+  align-items: center;
+  button {
+    background: #3598DB;
+    height: 30px;
+    margin: 0px 10px;
+  }
+  input {
+    height: 30px;
+    margin: 0px auto 0px 10px;
+  }
 }
 
 .hello-world {
@@ -14,7 +33,26 @@ body {
   border: 1px dotted aliceblue;
 }
 
+
+
 .MessageInput {
   display: flex;
-  flex-direction: flex-row;
+  flex-direction: row;
+  height: 50px;
+  background: $primary-background;
+  justify-content: flex-end;
+  align-items: center;
+  button {
+    background: #3598DB;
+    height: 30px;
+    margin: 0px 10px;
+  }
+  input {
+    height: 30px;
+    margin: 0px auto 0px 10px;
+  }
+  div {
+    color: #ffffff;
+    margin: 10px;
+  }
 }
