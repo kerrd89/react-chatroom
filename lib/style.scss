@@ -1,9 +1,14 @@
+@import '_reset';
+
 $message-display: #ffffff;
-$primary-background: #34495E;
+$primary-background: #2c3e50;
 $ridiculous: cursive;
 
 body {
   background: $message-display;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: .2px;
 }
 
 .MessageFilters {
@@ -14,13 +19,24 @@ body {
   justify-content: flex-end;
   align-items: center;
   button {
-    background: #3598DB;
+    background: #3498db;
     height: 30px;
     margin: 0px 10px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input {
     height: 30px;
     margin: 0px auto 0px 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    // placeholder font: #7f8c8d
   }
 }
 
@@ -33,6 +49,10 @@ body {
   border: 1px dotted aliceblue;
 }
 
+.Main {
+  display: flex;
+  flex-direction: row;
+}
 
 
 .MessageInput {
@@ -43,16 +63,37 @@ body {
   justify-content: flex-end;
   align-items: center;
   button {
-    background: #3598DB;
+    background: #3498db;
     height: 30px;
     margin: 0px 10px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input {
     height: 30px;
     margin: 0px auto 0px 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   div {
     color: #ffffff;
     margin: 10px;
   }
+}
+
+.Users {
+  background-color: #ecf0f1;
+  p{
+    font-weight: 300;
+  }
+}
+
+.CurrentUser {
+  background-color:#95a5a6;
 }
