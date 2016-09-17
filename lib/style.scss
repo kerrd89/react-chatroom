@@ -33,6 +33,10 @@ body {
   border: 1px dotted aliceblue;
 }
 
+.Main {
+  display: flex;
+  flex-direction: row;
+}
 
 
 .MessageInput {
