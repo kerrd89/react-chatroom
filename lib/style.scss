@@ -1,9 +1,10 @@
 $message-display: #ffffff;
 $primary-background: #34495E;
-$ridiculous: cursive;
+$ridiculous: 'Fira Sans', sans-serif;
 
 body {
   background: $message-display;
+  font-family: $ridiculous;
 }
 
 .MessageFilters {
@@ -13,14 +14,28 @@ body {
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
+  h1 {
+    font-size: 15px;
+    color: #ffffff;
+    margin-left: 5px;
+  }
   button {
-    background: #3598DB;
     height: 30px;
     margin: 0px 10px;
+    background: #3598DB;
+    color: #ffffff;
   }
   input {
     height: 30px;
+    width: 250px;
     margin: 0px auto 0px 10px;
+    border-radius: 5px;
+    background-color: #D8D8D8;
+  }
+  input::-webkit-input-placeholder {
+   color: #34495E;
+   font-size: 12px;
+   padding-left: 10px;
   }
 }
 
@@ -38,7 +53,6 @@ body {
   flex-direction: row;
 }
 
-
 .MessageInput {
   display: flex;
   flex-direction: row;
@@ -50,13 +64,28 @@ body {
     background: #3598DB;
     height: 30px;
     margin: 0px 10px;
+    color: #ffffff;
   }
   input {
     height: 30px;
+    width: 250px;
     margin: 0px auto 0px 10px;
+    border-radius: 5px;
+    background-color: #D8D8D8;
+  }
+  input::-webkit-input-placeholder {
+   color: #34495E;
+   font-size: 12px;
+   padding-left: 10px;
   }
   div {
     color: #ffffff;
     margin: 10px;
+  }
+  .NewMessageButton {
+    background-color: #2DCB70;
+  }
+  .ClearButton {
+    background-color: #E84C3D;
   }
 }
