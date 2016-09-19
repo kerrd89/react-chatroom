@@ -1,6 +1,9 @@
+@import '_reset';
+
 $message-display: #ffffff;
 $primary-background: #34495E;
 $ridiculous: 'Fira Sans', sans-serif;
+
 
 body {
   background: $message-display;
@@ -39,10 +42,6 @@ body {
   }
 }
 
-.hello-world {
-  font-family: $ridiculous;
-}
-
 #new-message--content {
   height: 100px;
   border: 1px dotted aliceblue;
@@ -51,6 +50,14 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
+  padding
+  .Messages {
+    width: 75%;
+  }
+  .Users {
+    width: 25%;
+    background-color:#bdc3c7;
+  }
 }
 
 .MessageInput {
