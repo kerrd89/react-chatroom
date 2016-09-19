@@ -4,6 +4,7 @@ $message-display: #ffffff;
 $primary-background: #2c3e50;
 $ridiculous: cursive;
 
+
 body {
   background: $message-display;
   font-family: 'Fira Sans', sans-serif;
@@ -18,6 +19,11 @@ body {
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
+  h1 {
+    font-size: 15px;
+    color: #ffffff;
+    margin-left: 5px;
+  }
   button {
     background: #3498db;
     height: 30px;
@@ -31,17 +37,18 @@ body {
   }
   input {
     height: 30px;
+    width: 250px;
     margin: 0px auto 0px 10px;
-    background-color: #ecf0f1;
     border-radius: 5px;
+    background-color: #D8D8D8;
     font-weight: 300;
     letter-spacing: .2px;
-    // placeholder font: #7f8c8d
   }
-}
-
-.hello-world {
-  font-family: $ridiculous;
+  input::-webkit-input-placeholder {
+   color: #34495E;
+   font-size: 12px;
+   padding-left: 10px;
+  }
 }
 
 #new-message--content {
@@ -52,8 +59,15 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
+  padding
+  .Messages {
+    width: 75%;
+  }
+  .Users {
+    width: 25%;
+    background-color:#bdc3c7;
+  }
 }
-
 
 .MessageInput {
   display: flex;
@@ -75,15 +89,28 @@ body {
   }
   input {
     height: 30px;
+    width: 250px;
     margin: 0px auto 0px 10px;
-    background-color: #ecf0f1;
     border-radius: 5px;
+    background-color: #D8D8D8;
     font-weight: 300;
     letter-spacing: .2px;
   }
+  input::-webkit-input-placeholder {
+   color: #34495E;
+   font-size: 12px;
+   padding-left: 10px;
+ }
+
   div {
     color: #ffffff;
     margin: 10px;
+  }
+  .NewMessageButton {
+    background-color: #2DCB70;
+  }
+  .ClearButton {
+    background-color: #E84C3D;
   }
 }
 
@@ -96,4 +123,14 @@ body {
 
 .CurrentUser {
   background-color:#95a5a6;
+}
+
+.ActiveUser {
+  display: flex;
+  flex-direction: row;
+  background-color: #95a5a6;
+
+ button{
+   margin-left: auto;
+ }
 }
