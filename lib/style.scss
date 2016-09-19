@@ -1,10 +1,14 @@
+@import '_reset';
+
 $message-display: #ffffff;
-$primary-background: #34495E;
-$ridiculous: 'Fira Sans', sans-serif;
+$primary-background: #2c3e50;
+$ridiculous: cursive;
 
 body {
   background: $message-display;
-  font-family: $ridiculous;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: .2px;
 }
 
 .MessageFilters {
@@ -20,10 +24,15 @@ body {
     margin-left: 5px;
   }
   button {
+    background: #3498db;
     height: 30px;
     margin: 0px 10px;
-    background: #3598DB;
+    font-family: 'Fira Sans', sans-serif;
     color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input {
     height: 30px;
@@ -31,6 +40,8 @@ body {
     margin: 0px auto 0px 10px;
     border-radius: 5px;
     background-color: #D8D8D8;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input::-webkit-input-placeholder {
    color: #34495E;
@@ -61,10 +72,15 @@ body {
   justify-content: flex-end;
   align-items: center;
   button {
-    background: #3598DB;
+    background: #3498db;
     height: 30px;
     margin: 0px 10px;
+    font-family: 'Fira Sans', sans-serif;
     color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input {
     height: 30px;
@@ -72,12 +88,15 @@ body {
     margin: 0px auto 0px 10px;
     border-radius: 5px;
     background-color: #D8D8D8;
+    font-weight: 300;
+    letter-spacing: .2px;
   }
   input::-webkit-input-placeholder {
    color: #34495E;
    font-size: 12px;
    padding-left: 10px;
-  }
+ }
+
   div {
     color: #ffffff;
     margin: 10px;
@@ -88,4 +107,15 @@ body {
   .ClearButton {
     background-color: #E84C3D;
   }
+}
+
+.Users {
+  background-color: #ecf0f1;
+  p{
+    font-weight: 300;
+  }
+}
+
+.CurrentUser {
+  background-color:#95a5a6;
 }
