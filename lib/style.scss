@@ -4,12 +4,14 @@ $message-display: #ffffff;
 $primary-background: #2c3e50;
 $ridiculous: cursive;
 
+#application {
+  height: 100vh;
+}
 
 body {
+  height: 100vh;
   background: $message-display;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
-  letter-spacing: .2px;
 }
 
 .MessageFilters {
@@ -59,9 +61,19 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
-  padding
+  li {
+    padding: 10px;
+  }
   .Messages {
-    width: 75%;
+    width: 100%;
+    .TimeStamp{
+      color: #9D6BB0;
+    }
+    .DisplayName {
+      color: #2E7DB6;
+      margin-left: 10px;
+      font-weight: bold;
+    }
   }
   .Users {
     width: 25%;
@@ -76,6 +88,7 @@ body {
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
+  align-self: flex-end;
   button {
     background: #3498db;
     height: 30px;
