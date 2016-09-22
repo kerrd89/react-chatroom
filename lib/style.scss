@@ -7,6 +7,7 @@ $ridiculous: cursive;
 #application {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 .MessageFilters {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 5vh;
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
@@ -92,7 +93,7 @@ body {
 .MessageInput {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 10vh;
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
@@ -142,10 +143,6 @@ body {
   }
 }
 
-.CurrentUser {
-  background-color:#95a5a6;
-}
-
 .UserLine {
   font-weight: 600;
 }
@@ -154,24 +151,44 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #95a5a6;
-  height: 7vh;
+  height: 8vh;
   color: #E8F2F4;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
  button{
+   margin-left: auto;
+   background-color: #E74C3D;
    color: #ffffff;
    border-radius: 5px;
    border: none;
+   padding: 15px;
  }
 }
 
+  .NonActiveUser {
+    display: flex;
+    flex-direction: row;
+    background-color: #95a5a6;
+    height: 18vh;
+    color: #E8F2F4;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+   button{
+     color: #ffffff;
+     border-radius: 5px;
+     border: none;
+     background-color: #2CCC6F;
+     padding: 15px;
+   }
+  }
+
 .SignIn {
-  background-color: #2CCC6F;
+
 }
 .SignOut {
-  background-color: #E74C3D;
-  margin-left: auto;
+
 }
 
 @media screen and (max-width: 515px) {
@@ -186,6 +203,8 @@ body {
     justify-content: center;
     .Filter {
       width: 90vw;
+      height: 5vh;
+      font-size: 110%;
     }
     .SortButton {
       font-size: 110%;
@@ -213,19 +232,31 @@ body {
   .ActiveUser {
     justify-content: space-around;
     font-size: 70%;
+    button {
+      padding: 5px;
+    }
+  }
+
+  .NonActiveUser {
+    height: 15vh;
+    margin-top: 10vh;
   }
 
   .MessageInput {
     display: flex;
     flex-wrap: wrap;
-    height: 15vh;
+    height: 17vh;
     justify-content: center;
     .ActualMessageInput {
-      width: 90vw;
+      width: 78vw;
     }
     button {
       font-size: 110%;
       width: 30%;
+    }
+    input {
+      height: 5vh;
+      font-size: 110%;
     }
   }
 }
