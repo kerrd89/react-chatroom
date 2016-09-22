@@ -5,11 +5,12 @@ $primary-background: #2c3e50;
 $ridiculous: cursive;
 
 #application {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: $message-display;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -61,11 +62,18 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
+  height: 77vh;
+
   li {
     padding: 10px;
   }
+  h2 {
+    padding: 10px;
+    font-weight: bold;
+  }
   .Messages {
-    width: 100%;
+    width: 60%;
+    overflow-y: scroll;
     .TimeStamp{
       color: #9D6BB0;
     }
@@ -76,8 +84,9 @@ body {
     }
   }
   .Users {
-    width: 25%;
+    width: 40%;
     background-color:#bdc3c7;
+    overflow-y: scroll;
   }
 }
 
@@ -142,7 +151,10 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #95a5a6;
-
+  height: 7vh;
+  color: #E8F2F4;
+  align-items: center;
+  padding-left: 15px;
  button{
    margin-left: auto;
  }
