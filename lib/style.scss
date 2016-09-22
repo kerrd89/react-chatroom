@@ -160,6 +160,22 @@ body {
   align-items: center;
   padding-left: 15px;
  button{
-   margin-left: auto;
+   color: #ffffff;
+   border-radius: 5px;
+   border: none;
  }
+}
+
+.SignIn {
+  background-color: #2CCC6F;
+}
+.SignOut {
+  background-color: #E74C3D;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 515px) {
+  body {
+    background-color: red;
+  }
 }
