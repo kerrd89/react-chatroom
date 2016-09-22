@@ -158,6 +158,7 @@ body {
   color: #E8F2F4;
   align-items: center;
   padding-left: 15px;
+  padding-right: 15px;
  button{
    color: #ffffff;
    border-radius: 5px;
@@ -210,6 +211,7 @@ body {
   }
 
   .ActiveUser {
+    justify-content: space-around;
     font-size: 70%;
   }
 
@@ -218,7 +220,7 @@ body {
     flex-wrap: wrap;
     height: 15vh;
     justify-content: center;
-    .Filter {
+    .ActualMessageInput {
       width: 90vw;
     }
     button {
