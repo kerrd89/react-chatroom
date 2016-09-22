@@ -175,7 +175,27 @@ body {
 }
 
 @media screen and (max-width: 515px) {
-  body {
-    background-color: red;
+  h1 {
+    display: none;
+  }
+
+  .MessageFilters {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: center;
+    .Filter {
+      width: 90vw;
+    }
+    .SortButton {
+      font-size: 110%;
+      width: 30%;
+    }
+  }
+
+
+
+  .Users {
+    display: none;
   }
 }
