@@ -4,12 +4,15 @@ $message-display: #ffffff;
 $primary-background: #2c3e50;
 $ridiculous: cursive;
 
+#application {
+  display: flex;
+  flex-direction: column;
+}
 
 body {
+  min-height: 100vh;
   background: $message-display;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
-  letter-spacing: .2px;
 }
 
 .MessageFilters {
@@ -59,13 +62,30 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
-  padding
+  height: 77vh;
+  li {
+    padding: 10px;
+  }
+  h2 {
+    padding: 10px;
+    font-weight: 600;
+  }
   .Messages {
-    width: 75%;
+    width: 60%;
+    overflow-y: scroll;
+    .TimeStamp{
+      color: #9D6BB0;
+    }
+    .DisplayName {
+      color: #2E7DB6;
+      margin-left: 10px;
+      font-weight: 600;
+    }
   }
   .Users {
-    width: 25%;
+    width: 40%;
     background-color:#bdc3c7;
+    overflow-y: scroll;
   }
 }
 
@@ -76,6 +96,7 @@ body {
   background: $primary-background;
   justify-content: flex-end;
   align-items: center;
+  align-self: flex-end;
   button {
     background: #3498db;
     height: 30px;
@@ -106,10 +127,10 @@ body {
     color: #ffffff;
     margin: 10px;
   }
-  .NewMessageButton {
-    background-color: #2DCB70;
+  .NewMessageSubmit {
+    background-color: #2ECA70;
   }
-  .ClearButton {
+  .Clear {
     background-color: #E84C3D;
   }
 }
@@ -125,12 +146,86 @@ body {
   background-color:#95a5a6;
 }
 
+.UserLine {
+  font-weight: 600;
+}
+
 .ActiveUser {
   display: flex;
   flex-direction: row;
   background-color: #95a5a6;
-
+  height: 7vh;
+  color: #E8F2F4;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
  button{
-   margin-left: auto;
+   color: #ffffff;
+   border-radius: 5px;
+   border: none;
  }
+}
+
+.SignIn {
+  background-color: #2CCC6F;
+}
+.SignOut {
+  background-color: #E74C3D;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 515px) {
+  h1 {
+    display: none;
+  }
+
+  .MessageFilters {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: center;
+    .Filter {
+      width: 90vw;
+    }
+    .SortButton {
+      font-size: 110%;
+      width: 30%;
+    }
+  }
+
+  .Main {
+    height: 60vh;
+  }
+
+  .Main .Messages {
+    overflow-y: scroll;
+    width: auto;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .Users {
+    display: none;
+  }
+
+  .ActiveUser {
+    justify-content: space-around;
+    font-size: 70%;
+  }
+
+  .MessageInput {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: center;
+    .ActualMessageInput {
+      width: 90vw;
+    }
+    button {
+      font-size: 110%;
+      width: 30%;
+    }
+  }
 }
