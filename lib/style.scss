@@ -63,7 +63,6 @@ body {
   display: flex;
   flex-direction: row;
   height: 77vh;
-
   li {
     padding: 10px;
   }
@@ -193,9 +192,38 @@ body {
     }
   }
 
+  .Main {
+    height: 60vh;
+  }
 
+  .Main .Messages {
+    overflow-y: scroll;
+    width: auto;
+  }
+
+  ul {
+    width: 100%;
+  }
 
   .Users {
     display: none;
+  }
+
+  .ActiveUser {
+    font-size: 70%;
+  }
+
+  .MessageInput {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: center;
+    .Filter {
+      width: 90vw;
+    }
+    button {
+      font-size: 110%;
+      width: 30%;
+    }
   }
 }
