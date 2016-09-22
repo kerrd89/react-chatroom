@@ -32,7 +32,7 @@ describe('Application', () => {
 
     it('should have virtual dom components', () => {
       expect(wrapper.find('.MessageFilters')).to.have.length(1);
-      expect(wrapper.find('.ActiveUser')).to.have.length(1);
+      expect(wrapper.find('.NonActiveUser')).to.have.length(1);
       expect(wrapper.find('.Messages')).to.have.length(1);
       expect(wrapper.find('.Users')).to.have.length(1);
     });
@@ -71,11 +71,11 @@ describe('MessageInput', () => {
 
     it('contains two buttons and one input', () => {
       expect(wrapper.find('button')).to.have.length(2)
-      expect(wrapper.find('input')).to.have.length(1)
+      expect(wrapper.find('.ActualMessageInput')).to.have.length(1)
     })
 
     it('renders a addNewMessage button', () => {
-      expect(wrapper.text()).to.contain('Add New Message');
+      expect(wrapper.text()).to.contain('Submit');
     });
 
     it('renders a Clear button', () => {
