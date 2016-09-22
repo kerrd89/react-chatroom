@@ -69,7 +69,7 @@ body {
   }
   h2 {
     padding: 10px;
-    font-weight: bold;
+    font-weight: 600;
   }
   .Messages {
     width: 60%;
@@ -80,7 +80,7 @@ body {
     .DisplayName {
       color: #2E7DB6;
       margin-left: 10px;
-      font-weight: bold;
+      font-weight: 600;
     }
   }
   .Users {
@@ -128,10 +128,10 @@ body {
     color: #ffffff;
     margin: 10px;
   }
-  .NewMessageButton {
-    background-color: #2DCB70;
+  .NewMessageSubmit {
+    background-color: #2ECA70;
   }
-  .ClearButton {
+  .Clear {
     background-color: #E84C3D;
   }
 }
@@ -145,6 +145,10 @@ body {
 
 .CurrentUser {
   background-color:#95a5a6;
+}
+
+.UserLine {
+  font-weight: 600;
 }
 
 .ActiveUser {
