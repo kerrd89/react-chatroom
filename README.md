@@ -10,6 +10,8 @@
 
 ![](http://g.recordit.co/z0XLOYJlYI.gif)
 
+The application is also hosted through firebase [here](https://shoot-the-breeze-ff2b0.firebaseapp.com/).
+
 This is a chatroom using React, Firebase, and user authentication through google.  
 
 
